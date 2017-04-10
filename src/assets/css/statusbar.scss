@@ -1,0 +1,45 @@
+#statusbar {
+    padding: 20px 0;
+    background: #2c3e50;
+
+    > div {
+        color: #1abc9c;
+
+        i {
+            padding: 5px 8px;
+            border-radius: 100%;
+            color: #fff;
+            background: #1abc9c;
+            margin-right: 5px;
+            font-size: 16px;
+            vertical-align: middle;
+            line-height: 0;
+        }
+    }
+
+    .money {
+        font-size: 20px;
+    }
+
+    .score {
+        font-size: 20px;
+        text-align: center;
+        color: #f1c40f;
+
+        i {
+            background: #f1c40f;
+        }
+    }
+
+    .stars {
+        text-align: right;
+
+        i {
+            background: none;
+            color: #f1c40f;
+            font-size: 30px;
+            margin-right: 0;
+        }
+    }
+
+}
