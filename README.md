@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # trabalho2web
 
 > A Vue.js project
@@ -16,3 +17,6 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# trabalho2web
+>>>>>>> 329a237491bf0d0ef8b73ec3837a7bd0b24da153
