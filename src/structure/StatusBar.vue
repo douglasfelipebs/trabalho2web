@@ -15,19 +15,29 @@
                 <i class="mdi mdi-star-outline"></i>
                 <i class="mdi mdi-star-outline"></i>
                 <i class="mdi mdi-star-outline"></i>
+
+                <button class="btn btn-success menu" @click="openMenu(true)">
+                    <i class="mdi mdi-pause"></i>
+                </button>
             </div>
         </div>
     </div>
 </template>
 
 <script type="text/babel">
-    import { mapGetters } from 'vuex'
+    import { mapGetters, mapActions } from 'vuex'
 
     export default {
         computed: {
             ...mapGetters({
                 score: 'getScore',
                 money: 'getMoney'
+            })
+        },
+
+        methods: {
+            ...mapActions({
+                openMenu: 'setMenuOpen'
             })
         }
     }

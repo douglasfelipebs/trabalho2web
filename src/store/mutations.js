@@ -19,7 +19,31 @@ export default {
     },
 
     setRestaurant (state, data) {
-        localStorage.setItem('restaurant', data)
-        state.restaurant = data
-    }
+        localStorage.setItem('restaurant', JSON.stringify(data))
+        state.restaurant = JSON.stringify(data)
+    },
+
+    setRestaurantOpen (state, data) {
+        state.restaurantOpen = data
+    },
+
+    setQueue (state, data) {
+        localStorage.setItem('queue', JSON.stringify(data))
+        state.queue = JSON.stringify(data)
+    },
+
+    setServing (state, data) {
+        localStorage.setItem('serving', JSON.stringify(data))
+        state.serving = JSON.stringify(data)
+    },
+
+    setCart (state, data) {
+        localStorage.setItem('cart', JSON.stringify(data))
+        state.cart = JSON.stringify(data)
+    },
+
+    setIngredients (state, data) {
+        localStorage.setItem('ingredients', JSON.stringify(data))
+        state.ingredients = JSON.stringify(data)
+    },
 }

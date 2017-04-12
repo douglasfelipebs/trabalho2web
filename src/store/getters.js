@@ -16,6 +16,26 @@ export default {
     },
 
     getRestaurant ({ restaurant }) {
-        return restaurant
+        return JSON.parse(restaurant)
+    },
+
+    getRestaurantOpen ({ restaurantOpen }) {
+        return restaurantOpen
+    },
+
+    getQueue ({ queue }) {
+        return JSON.parse(queue)
+    },
+
+    getServing ({ serving }) {
+        return JSON.parse(serving)
+    },
+
+    getCart ({ cart }) {
+        return JSON.parse(cart)
+    },
+
+    getIngredients ({ ingredients }) {
+        return JSON.parse(ingredients)
     }
 }

@@ -1,0 +1,15 @@
+#status {
+    padding: 20px;
+    background: #34495e;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+
+    .isOpen {
+        p {
+            margin: 0;
+            line-height: 35px;
+        }
+    }
+}

@@ -14,9 +14,11 @@
                         </div>
                         <div class="panel-body">
                             <ul class="list-group">
-                                <li class="list-group-item"><b>Capacidade Máxima:</b> {{ restaurant.size }} mesas</li>
-                                <li class="list-group-item"><b>Capacidade Cozinha:</b> {{ restaurant.kitchen }} pratos</li>
+                                <li class="list-group-item"><b>Capacidade Máxima:</b> {{ restaurant.serving_size }} mesas</li>
+                                <li class="list-group-item"><b>Capacidade Cozinha:</b> {{ restaurant.kitchen_size }} pratos</li>
                                 <li class="list-group-item"><b>Localização:</b> {{ restaurant.location }}</li>
+                                <li class="list-group-item"><b>Mesas Iniciais:</b> 3</li>
+                                <li class="list-group-item"><b>Funcionarios Iniciais:</b> 3 (garçom, cozinheiro, caixa)</li>
                             </ul>
                         </div>
                         <div class="panel-footer text-center">
@@ -39,9 +41,27 @@
         data () {
             return {
                 restaurants: [
-                    { name: 'Restaurant 1', size: 30, kitchen: 10, location: 'Interior', price: 1300 },
-                    { name: 'Restaurant 2', size: 20, kitchen: 20, location: 'Centro', price: 1100 },
-                    { name: 'Restaurant 3', size: 25, kitchen: 5, location: 'Centro', price: 900 },
+                    {
+                        name: 'Restaurant 1',
+                        serving_size: 30,
+                        kitchen_size: 15,
+                        location: 'Interior',
+                        price: 1000
+                    },
+                    {
+                        name: 'Restaurant 2',
+                        serving_size: 20,
+                        kitchen_size: 20,
+                        location: 'Centro',
+                        price: 1500
+                    },
+                    {
+                        name: 'Restaurant 3',
+                        serving_size: 25,
+                        kitchen_size: 15,
+                        location: 'Centro',
+                        price: 11200
+                    }
                 ]
             }
         },

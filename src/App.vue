@@ -4,7 +4,7 @@
             <StatusBar />
             <Stages />
         </div>
-        <GameMenu v-if="gameMenuOpen" />
+        <GameMenu />
     </div>
 </template>
 

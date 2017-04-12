@@ -1,0 +1,107 @@
+#store {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8e44ad;
+    z-index: 9999;
+
+    header {
+        color: #fff;
+        text-align: left;
+        position: relative;
+
+        h3 {
+            margin: 20px 20px 10px 0;
+            display: inline-block;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        .money {
+            font-size: 20px;
+            display: inline-block;
+
+            i {
+                padding: 5px 8px;
+                border-radius: 100%;
+                color: #fff;
+                background: #1abc9c;
+                margin-right: 5px;
+                font-size: 16px;
+                vertical-align: middle;
+                line-height: 0;
+            }
+        }
+
+        .close {
+            color: #fff;
+            opacity: 0.6;
+            position: absolute;
+            top: 40px;
+            right: 20px;
+
+            i {
+                font-size: 60px;
+                line-height: 0;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px;
+        display: block;
+        width: 100%;
+        float: left;
+
+        h3 {
+            color: #fff;
+            text-align: left;
+            margin-left: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+
+            > span {
+                display: block;
+                background: #9b59b6;
+                padding: 20px;
+                color: #fff;
+                text-align: center;
+
+                strong {
+                    font-size: 20px;
+                    display: block;
+                }
+
+                .price {
+                    margin-top: 10px;
+                    font-size: 35px;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+
+                .btn {
+                    border-radius: 100%;
+                    display: inline-block;
+                    text-align: center;
+                    padding: 5px 8px;
+
+                    i {
+                        margin: 0 !important;
+                    }
+                }
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

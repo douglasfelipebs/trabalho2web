@@ -3,9 +3,22 @@
 }
 
 .blur {
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    transition: all .3s;
+}
+
+.btn-success {
+    background: #16a085 !important;
+    border-color: #1abc9c !important;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+    background: #1abc9c !important;
+    border-color: #1abc9c !important;
 }
